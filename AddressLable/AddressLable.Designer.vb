@@ -158,27 +158,24 @@ Partial Class AddressLable
         Me.DisplayCityLable.AutoSize = True
         Me.DisplayCityLable.Location = New System.Drawing.Point(34, 82)
         Me.DisplayCityLable.Name = "DisplayCityLable"
-        Me.DisplayCityLable.Size = New System.Drawing.Size(24, 13)
+        Me.DisplayCityLable.Size = New System.Drawing.Size(0, 13)
         Me.DisplayCityLable.TabIndex = 12
-        Me.DisplayCityLable.Text = "City"
         '
         'DisplayAddressLable
         '
         Me.DisplayAddressLable.AutoSize = True
         Me.DisplayAddressLable.Location = New System.Drawing.Point(34, 69)
         Me.DisplayAddressLable.Name = "DisplayAddressLable"
-        Me.DisplayAddressLable.Size = New System.Drawing.Size(45, 13)
+        Me.DisplayAddressLable.Size = New System.Drawing.Size(0, 13)
         Me.DisplayAddressLable.TabIndex = 11
-        Me.DisplayAddressLable.Text = "Address"
         '
         'DisplayNameLable
         '
         Me.DisplayNameLable.AutoSize = True
         Me.DisplayNameLable.Location = New System.Drawing.Point(34, 56)
         Me.DisplayNameLable.Name = "DisplayNameLable"
-        Me.DisplayNameLable.Size = New System.Drawing.Size(35, 13)
+        Me.DisplayNameLable.Size = New System.Drawing.Size(0, 13)
         Me.DisplayNameLable.TabIndex = 10
-        Me.DisplayNameLable.Text = "Name"
         '
         'MakeLableButton
         '
