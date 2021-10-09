@@ -23,22 +23,23 @@ Partial Class AddressLable
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.UserInputBox = New System.Windows.Forms.GroupBox()
-        Me.DisplayBox = New System.Windows.Forms.GroupBox()
-        Me.NameTextBox = New System.Windows.Forms.TextBox()
-        Me.AddressTextBox = New System.Windows.Forms.TextBox()
-        Me.CityTextBox = New System.Windows.Forms.TextBox()
-        Me.ZipTextBox = New System.Windows.Forms.TextBox()
-        Me.NameLable = New System.Windows.Forms.Label()
-        Me.AddressLabel = New System.Windows.Forms.Label()
-        Me.CityLabel = New System.Windows.Forms.Label()
-        Me.ZipLabel = New System.Windows.Forms.Label()
         Me.StateLabel = New System.Windows.Forms.Label()
         Me.StateTextBox = New System.Windows.Forms.TextBox()
+        Me.ZipLabel = New System.Windows.Forms.Label()
+        Me.CityLabel = New System.Windows.Forms.Label()
+        Me.AddressLabel = New System.Windows.Forms.Label()
+        Me.NameLable = New System.Windows.Forms.Label()
+        Me.ZipTextBox = New System.Windows.Forms.TextBox()
+        Me.CityTextBox = New System.Windows.Forms.TextBox()
+        Me.AddressTextBox = New System.Windows.Forms.TextBox()
+        Me.NameTextBox = New System.Windows.Forms.TextBox()
+        Me.DisplayBox = New System.Windows.Forms.GroupBox()
+        Me.DisplayStateLable = New System.Windows.Forms.Label()
+        Me.DisplayCityLable = New System.Windows.Forms.Label()
+        Me.DisplayZipLable = New System.Windows.Forms.Label()
+        Me.DisplayAddressLable = New System.Windows.Forms.Label()
         Me.DisplayNameLable = New System.Windows.Forms.Label()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.Label3 = New System.Windows.Forms.Label()
-        Me.Label4 = New System.Windows.Forms.Label()
-        Me.Label5 = New System.Windows.Forms.Label()
+        Me.MakeLableButton = New System.Windows.Forms.Button()
         Me.UserInputBox.SuspendLayout()
         Me.DisplayBox.SuspendLayout()
         Me.SuspendLayout()
@@ -62,84 +63,6 @@ Partial Class AddressLable
         Me.UserInputBox.TabStop = False
         Me.UserInputBox.Text = "User Input"
         '
-        'DisplayBox
-        '
-        Me.DisplayBox.Controls.Add(Me.Label5)
-        Me.DisplayBox.Controls.Add(Me.Label3)
-        Me.DisplayBox.Controls.Add(Me.Label4)
-        Me.DisplayBox.Controls.Add(Me.Label2)
-        Me.DisplayBox.Controls.Add(Me.DisplayNameLable)
-        Me.DisplayBox.Location = New System.Drawing.Point(427, 12)
-        Me.DisplayBox.Name = "DisplayBox"
-        Me.DisplayBox.Size = New System.Drawing.Size(361, 438)
-        Me.DisplayBox.TabIndex = 1
-        Me.DisplayBox.TabStop = False
-        Me.DisplayBox.Text = "Address Display"
-        '
-        'NameTextBox
-        '
-        Me.NameTextBox.Location = New System.Drawing.Point(24, 49)
-        Me.NameTextBox.Name = "NameTextBox"
-        Me.NameTextBox.Size = New System.Drawing.Size(122, 20)
-        Me.NameTextBox.TabIndex = 0
-        '
-        'AddressTextBox
-        '
-        Me.AddressTextBox.Location = New System.Drawing.Point(24, 96)
-        Me.AddressTextBox.Name = "AddressTextBox"
-        Me.AddressTextBox.Size = New System.Drawing.Size(122, 20)
-        Me.AddressTextBox.TabIndex = 1
-        '
-        'CityTextBox
-        '
-        Me.CityTextBox.Location = New System.Drawing.Point(24, 139)
-        Me.CityTextBox.Name = "CityTextBox"
-        Me.CityTextBox.Size = New System.Drawing.Size(122, 20)
-        Me.CityTextBox.TabIndex = 2
-        '
-        'ZipTextBox
-        '
-        Me.ZipTextBox.Location = New System.Drawing.Point(24, 179)
-        Me.ZipTextBox.Name = "ZipTextBox"
-        Me.ZipTextBox.Size = New System.Drawing.Size(122, 20)
-        Me.ZipTextBox.TabIndex = 3
-        '
-        'NameLable
-        '
-        Me.NameLable.AutoSize = True
-        Me.NameLable.Location = New System.Drawing.Point(21, 33)
-        Me.NameLable.Name = "NameLable"
-        Me.NameLable.Size = New System.Drawing.Size(86, 13)
-        Me.NameLable.TabIndex = 4
-        Me.NameLable.Text = "Name, First & Last"
-        '
-        'AddressLabel
-        '
-        Me.AddressLabel.AutoSize = True
-        Me.AddressLabel.Location = New System.Drawing.Point(21, 80)
-        Me.AddressLabel.Name = "AddressLabel"
-        Me.AddressLabel.Size = New System.Drawing.Size(54, 13)
-        Me.AddressLabel.TabIndex = 5
-        Me.AddressLabel.Text = "Address 1"
-        '
-        'CityLabel
-        '
-        Me.CityLabel.AutoSize = True
-        Me.CityLabel.Location = New System.Drawing.Point(21, 123)
-        Me.CityLabel.Name = "CityLabel"
-        Me.CityLabel.Size = New System.Drawing.Size(24, 13)
-        Me.CityLabel.TabIndex = 6
-        Me.CityLabel.Text = "City"
-        '
-        'ZipLabel
-        '
-        Me.ZipLabel.AutoSize = True
-        Me.ZipLabel.Location = New System.Drawing.Point(21, 163)
-        Me.ZipLabel.Name = "ZipLabel"
-        Me.ZipLabel.Size = New System.Drawing.Size(84, 13)
-        Me.ZipLabel.TabIndex = 7
-        Me.ZipLabel.Text = "Zip/Postal Code"
-        '
         'StateLabel
         '
         Me.StateLabel.AutoSize = True
@@ -156,60 +79,148 @@ Partial Class AddressLable
         Me.StateTextBox.Size = New System.Drawing.Size(122, 20)
         Me.StateTextBox.TabIndex = 8
         '
+        'ZipLabel
+        '
+        Me.ZipLabel.AutoSize = True
+        Me.ZipLabel.Location = New System.Drawing.Point(21, 163)
+        Me.ZipLabel.Name = "ZipLabel"
+        Me.ZipLabel.Size = New System.Drawing.Size(84, 13)
+        Me.ZipLabel.TabIndex = 7
+        Me.ZipLabel.Text = "Zip/Postal Code"
+        '
+        'CityLabel
+        '
+        Me.CityLabel.AutoSize = True
+        Me.CityLabel.Location = New System.Drawing.Point(21, 123)
+        Me.CityLabel.Name = "CityLabel"
+        Me.CityLabel.Size = New System.Drawing.Size(24, 13)
+        Me.CityLabel.TabIndex = 6
+        Me.CityLabel.Text = "City"
+        '
+        'AddressLabel
+        '
+        Me.AddressLabel.AutoSize = True
+        Me.AddressLabel.Location = New System.Drawing.Point(21, 80)
+        Me.AddressLabel.Name = "AddressLabel"
+        Me.AddressLabel.Size = New System.Drawing.Size(54, 13)
+        Me.AddressLabel.TabIndex = 5
+        Me.AddressLabel.Text = "Address 1"
+        '
+        'NameLable
+        '
+        Me.NameLable.AutoSize = True
+        Me.NameLable.Location = New System.Drawing.Point(21, 33)
+        Me.NameLable.Name = "NameLable"
+        Me.NameLable.Size = New System.Drawing.Size(86, 13)
+        Me.NameLable.TabIndex = 4
+        Me.NameLable.Text = "Name, First & Last"
+        '
+        'ZipTextBox
+        '
+        Me.ZipTextBox.Location = New System.Drawing.Point(24, 179)
+        Me.ZipTextBox.Name = "ZipTextBox"
+        Me.ZipTextBox.Size = New System.Drawing.Size(122, 20)
+        Me.ZipTextBox.TabIndex = 3
+        '
+        'CityTextBox
+        '
+        Me.CityTextBox.Location = New System.Drawing.Point(24, 139)
+        Me.CityTextBox.Name = "CityTextBox"
+        Me.CityTextBox.Size = New System.Drawing.Size(122, 20)
+        Me.CityTextBox.TabIndex = 2
+        '
+        'AddressTextBox
+        '
+        Me.AddressTextBox.Location = New System.Drawing.Point(24, 96)
+        Me.AddressTextBox.Name = "AddressTextBox"
+        Me.AddressTextBox.Size = New System.Drawing.Size(122, 20)
+        Me.AddressTextBox.TabIndex = 1
+        '
+        'NameTextBox
+        '
+        Me.NameTextBox.Location = New System.Drawing.Point(24, 49)
+        Me.NameTextBox.Name = "NameTextBox"
+        Me.NameTextBox.Size = New System.Drawing.Size(122, 20)
+        Me.NameTextBox.TabIndex = 0
+        '
+        'DisplayBox
+        '
+        Me.DisplayBox.Controls.Add(Me.DisplayStateLable)
+        Me.DisplayBox.Controls.Add(Me.DisplayCityLable)
+        Me.DisplayBox.Controls.Add(Me.DisplayZipLable)
+        Me.DisplayBox.Controls.Add(Me.DisplayAddressLable)
+        Me.DisplayBox.Controls.Add(Me.DisplayNameLable)
+        Me.DisplayBox.Location = New System.Drawing.Point(427, 12)
+        Me.DisplayBox.Name = "DisplayBox"
+        Me.DisplayBox.Size = New System.Drawing.Size(361, 438)
+        Me.DisplayBox.TabIndex = 1
+        Me.DisplayBox.TabStop = False
+        Me.DisplayBox.Text = "Address Display"
+        '
+        'DisplayStateLable
+        '
+        Me.DisplayStateLable.AutoSize = True
+        Me.DisplayStateLable.Location = New System.Drawing.Point(34, 241)
+        Me.DisplayStateLable.Name = "DisplayStateLable"
+        Me.DisplayStateLable.Size = New System.Drawing.Size(32, 13)
+        Me.DisplayStateLable.TabIndex = 14
+        Me.DisplayStateLable.Text = "State"
+        '
+        'DisplayCityLable
+        '
+        Me.DisplayCityLable.AutoSize = True
+        Me.DisplayCityLable.Location = New System.Drawing.Point(34, 163)
+        Me.DisplayCityLable.Name = "DisplayCityLable"
+        Me.DisplayCityLable.Size = New System.Drawing.Size(24, 13)
+        Me.DisplayCityLable.TabIndex = 12
+        Me.DisplayCityLable.Text = "City"
+        '
+        'DisplayZipLable
+        '
+        Me.DisplayZipLable.AutoSize = True
+        Me.DisplayZipLable.Location = New System.Drawing.Point(34, 218)
+        Me.DisplayZipLable.Name = "DisplayZipLable"
+        Me.DisplayZipLable.Size = New System.Drawing.Size(22, 13)
+        Me.DisplayZipLable.TabIndex = 13
+        Me.DisplayZipLable.Text = "Zip"
+        '
+        'DisplayAddressLable
+        '
+        Me.DisplayAddressLable.AutoSize = True
+        Me.DisplayAddressLable.Location = New System.Drawing.Point(34, 139)
+        Me.DisplayAddressLable.Name = "DisplayAddressLable"
+        Me.DisplayAddressLable.Size = New System.Drawing.Size(45, 13)
+        Me.DisplayAddressLable.TabIndex = 11
+        Me.DisplayAddressLable.Text = "Address"
+        '
         'DisplayNameLable
         '
         Me.DisplayNameLable.AutoSize = True
-        Me.DisplayNameLable.Location = New System.Drawing.Point(21, 33)
+        Me.DisplayNameLable.Location = New System.Drawing.Point(23, 49)
         Me.DisplayNameLable.Name = "DisplayNameLable"
-        Me.DisplayNameLable.Size = New System.Drawing.Size(95, 13)
+        Me.DisplayNameLable.Size = New System.Drawing.Size(35, 13)
         Me.DisplayNameLable.TabIndex = 10
-        Me.DisplayNameLable.Text = "DisplayNameLable"
+        Me.DisplayNameLable.Text = "Name"
         '
-        'Label2
+        'MakeLableButton
         '
-        Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(34, 139)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(39, 13)
-        Me.Label2.TabIndex = 11
-        Me.Label2.Text = "Label2"
-        '
-        'Label3
-        '
-        Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(34, 163)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(39, 13)
-        Me.Label3.TabIndex = 12
-        Me.Label3.Text = "Label3"
-        '
-        'Label4
-        '
-        Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(34, 218)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(39, 13)
-        Me.Label4.TabIndex = 13
-        Me.Label4.Text = "Label4"
-        '
-        'Label5
-        '
-        Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(34, 241)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(39, 13)
-        Me.Label5.TabIndex = 14
-        Me.Label5.Text = "Label5"
+        Me.MakeLableButton.Location = New System.Drawing.Point(333, 292)
+        Me.MakeLableButton.Name = "MakeLableButton"
+        Me.MakeLableButton.Size = New System.Drawing.Size(88, 61)
+        Me.MakeLableButton.TabIndex = 2
+        Me.MakeLableButton.Text = "Make Lable"
+        Me.MakeLableButton.UseVisualStyleBackColor = True
         '
         'AddressLable
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.MakeLableButton)
         Me.Controls.Add(Me.DisplayBox)
         Me.Controls.Add(Me.UserInputBox)
         Me.Name = "AddressLable"
-        Me.Text = "Form1"
+        Me.Text = "Address Lable"
         Me.UserInputBox.ResumeLayout(False)
         Me.UserInputBox.PerformLayout()
         Me.DisplayBox.ResumeLayout(False)
@@ -230,9 +241,10 @@ Partial Class AddressLable
     Friend WithEvents ZipLabel As Label
     Friend WithEvents StateLabel As Label
     Friend WithEvents StateTextBox As TextBox
-    Friend WithEvents Label5 As Label
-    Friend WithEvents Label3 As Label
-    Friend WithEvents Label4 As Label
-    Friend WithEvents Label2 As Label
+    Friend WithEvents DisplayStateLable As Label
+    Friend WithEvents DisplayCityLable As Label
+    Friend WithEvents DisplayZipLable As Label
+    Friend WithEvents DisplayAddressLable As Label
     Friend WithEvents DisplayNameLable As Label
+    Friend WithEvents MakeLableButton As Button
 End Class
