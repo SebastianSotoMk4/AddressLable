@@ -22,6 +22,7 @@ Partial Class AddressLable
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(AddressLable))
         Me.UserInputBox = New System.Windows.Forms.GroupBox()
         Me.StateLabel = New System.Windows.Forms.Label()
         Me.StateTextBox = New System.Windows.Forms.TextBox()
@@ -194,6 +195,7 @@ Partial Class AddressLable
         Me.Controls.Add(Me.MakeLableButton)
         Me.Controls.Add(Me.DisplayBox)
         Me.Controls.Add(Me.UserInputBox)
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "AddressLable"
         Me.Text = "Address Lable"
         Me.UserInputBox.ResumeLayout(False)
