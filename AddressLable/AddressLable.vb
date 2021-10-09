@@ -6,11 +6,11 @@
 Option Strict On
 Option Explicit On
 Public Class AddressLable
-    Private Sub Label3_Click(sender As Object, e As EventArgs) Handles Label3.Click
+    Private Sub Label3_Click(sender As Object, e As EventArgs) Handles CityLabel.Click
 
     End Sub
 
-    Private Sub Label4_Click(sender As Object, e As EventArgs) Handles Label4.Click
+    Private Sub Label4_Click(sender As Object, e As EventArgs) Handles ZipLabel.Click
 
     End Sub
 
@@ -22,7 +22,7 @@ Public Class AddressLable
 
     End Sub
 
-    Private Sub Label1_Click(sender As Object, e As EventArgs) Handles Label1.Click
+    Private Sub Label1_Click(sender As Object, e As EventArgs) Handles NameLable.Click
 
     End Sub
 End Class
